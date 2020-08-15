@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3</title>
+  <style>
+    dl {
+      border: 3px double #ccc;
+      padding: 0.5em;
+    }
+    dt {
+      float: left;
+      clear: left;
+      width: 100px;
+      text-align: right;
+      font-weight: bold;
+      color: #f0595b;
+    }
+    dt::after {
+      content: ":";
+    }
+    dd {
+      margin: 0 0 0 110px;
+      padding: 0 0 0.5em 0;
+    }
+
+    input[type="submit"] {
+      color: #fff;
+      background: #f0595b;
+      border-color: #f0595b;
+      border-radius: 5px;
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <button id = 'addInput'>Add Schedule</button>
+  <button id = 'retrieveSchedules'>Retreive Schedules</button>
+  <form method="post" action="/api/schedules" id='scheduleform'>
+    <input type="submit" id='schedulesubmit'>
+  </form>
+  <script src= 'javascripts/addSchedule.js'></script>
+
+</body>
+</html>

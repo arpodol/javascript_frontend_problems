@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedules</title>
+  <style>
+    dt {
+      float: left;
+      clear: left;
+    }
+
+    .newInput {
+      bacgkground-color: gray;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Delete Booking</h1>
+  <form method="post" action="#" id='booking'>
+    <dl>
+      <dt><label for="id">Please Select One Booking To Delete</label></dt>
+      <dd><input type='text' name="id"></input></dd>
+    </dl>
+    <input type="submit" id='bookingsubmit'>
+  </form>
+
+  <h1>Delete Schedule</h1>
+  <form method="post" action="#" id='schedule'>
+    <dl>
+      <dt><label for="id">Please Select One Schedule To Delete</label></dt>
+      <dd><input type='text' name="id"></input></dd>
+    </dl>
+    <input type="submit" id='schedulesubmit'>
+  </form>
+  <script src="javascripts/cancellation.js">
+  </script>
+
+</body>
+</html>

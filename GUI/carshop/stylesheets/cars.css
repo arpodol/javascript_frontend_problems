@@ -1,0 +1,28 @@
+
+header {
+  background: #e29921;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: white;
+}
+
+#filters {
+  margin: 10px 0 0 0 ;
+}
+
+#cars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.car {
+  padding: 20px;
+}
+
+img {
+  height: 100px;
+}

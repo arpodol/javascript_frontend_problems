@@ -1,0 +1,23 @@
+body{
+  background-color: #9F913A;
+}
+
+#timer > p {
+  display: inline-block;
+  color: white;
+  font-size: 72px;
+}
+
+#main {
+  margin: 200px auto;
+  text-align: center;
+}
+
+button {
+  height: 50px;
+  width: 80px;
+  margin: 10px 20px;
+  background: transparent;
+  border-radius: 5px;
+  color:white;
+}

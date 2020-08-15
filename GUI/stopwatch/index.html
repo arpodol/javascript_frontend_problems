@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Stopwatch</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="stylesheets/whitespace-reset.css" />
+  <link rel="stylesheet" href="stylesheets/stopwatch.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src='javascripts/stopwatch.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+  <div id='main'>
+    <div id=timer>
+      <p id='hours'>00</p>
+      <p>:</p>
+      <p id='minutes'>00</p>
+      <p>:</p>
+      <p id='seconds'>00</p>
+      <p>:</p>
+      <p id='centiseconds'>00</p>
+    </div>
+    <div id='actions'>
+      <button id='toggle'>Start</button>
+      <button id='reset'>Reset</button>
+    </div>
+  </div>
+</body>
+</html>

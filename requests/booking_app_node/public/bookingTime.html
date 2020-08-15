@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedules</title>
+  <style>
+    dt {
+      float: left;
+      clear: left;
+    }
+
+    .newInput {
+      bacgkground-color: gray;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Schedules</h1>
+  <form method="post" action="/api/bookings" id='bookingform'>
+    <dl>
+      <dt><label for="id">Please Select One Schedule</label></dt>
+      <dd><select name="id"></select></dd>
+    </dl>
+    <dl>
+      <dt><label for="student_email">Email</label></dt>
+      <dd><input type='text' name="student_email"></dd>
+    </dl>
+    <input type="submit" id='schedulesubmit'>
+  </form>
+  <script src="javascripts/bookingTime.js">
+  </script>
+
+</body>
+</html>

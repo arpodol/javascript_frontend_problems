@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Cars</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="stylesheets/whitespace-reset.css" />
+  <link rel="stylesheet" href="stylesheets/cars.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src='javascripts/cars.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Buy Used Cars</h1>
+    <div id='filters'>
+    </div>
+  </header>
+  <main>
+    <div id='cars'>
+    </div>
+
+    <script type="text/x-handlebars" id="cars_template">
+      {{#each cars}}
+      <div class='car'>
+        <figure>
+          <img src='{{image}}'>
+        </figure>
+        <p>{{make}} {{model}}</p>
+        <p>Year: {{year}}</p>
+        <p>Price: ${{price}}</p>
+        <button class='buy'>Buy</button>
+      </div>
+      {{/each}}
+    </script>
+
+    <script type="text/x-handlebars" id="cars_template">
+      {{#each cars}}
+      <div class='car'>
+        <figure>
+          <img src='{{image}}'>
+        </figure>
+        <p>{{make}} {{model}}</p>
+        <p>Year: {{year}}</p>
+        <p>Price: ${{price}}</p>
+        <button class='buy'>Buy</button>
+      </div>
+      {{/each}}
+    </script>
+
+    <script type="text/x-handlebars" id="filter_template">
+      <label for='make'>Make</label>
+      <select id='make'>
+        <option value>All</option>
+        {{#each make}}
+        <option value={{this}}>{{this}}</option>
+        {{/each}}
+      </select>
+      <label for='model'>Model</label>
+      <select id='model'>
+        <option value>All</option>
+        {{#each model}}
+        <option value={{this}}>{{this}}</option>
+        {{/each}}
+      </select>
+      <label for='price'>Price</label>
+      <select id='price'>
+        <option value>All</option>
+        {{#each price}}
+        <option value={{this}}>{{this}}</option>
+        {{/each}}
+      </select>
+      <label for='year'>Year</label>
+      <select id='year'>
+        <option value>All</option>
+        {{#each year}}
+        <option value={{this}}>{{this}}</option>
+        {{/each}}
+      </select>
+      <button id='filter_submit'>Filter</button>
+    </script>
+
+
+  </main>
+</body>
+</html>

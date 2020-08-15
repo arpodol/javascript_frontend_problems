@@ -1,0 +1,54 @@
+body {
+  background-color: #eee9ce;
+  padding: 30px;
+  margin: 50px auto;
+  width: 800px;
+}
+
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+
+form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+}
+
+.answer {
+  margin: 10px 0;
+  height: 30px;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+#submittal{
+  background-color: #52be43;
+}
+
+#reset{
+  background-color: red;
+}
+
+.incorrect {
+  border: 2px solid red;
+}
+
+.correct {
+  border: 2px solid green;
+}
+
+#submittal[disabled] {
+  background-color: gray;
+}

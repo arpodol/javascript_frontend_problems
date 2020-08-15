@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Input</title>
+  <meta charset="UTF-8" />
+  <link rel='stylesheet' href="stylesheets/whitespace-reset.css">
+  <link rel="stylesheet" href="stylesheets/signup.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src='javascripts/signup.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+  <h1>Sign up Form</h1>
+  <form action='#' method='post' novalidate>
+    <p id='form_error'></p>
+    <fieldset>
+      <dl>
+        <dt>
+          <label for='first_name'>First Name</label>
+        </dt>
+        <dd>
+          <input type='text' name='first_name' id='first_name' required pattern='[a-zA-Z]+'>
+          <span class='field_error_message'></span>
+        </dd>
+        <dt>
+          <label for='last_name'>Last Name</label>
+        </dt>
+        <dd>
+          <input type='text' name='last_name' id='last_name' required pattern='[a-zA-Z]+'>
+          <span class='field_error_message'></span>
+        </dd>
+        <dt>
+          <label for='email'>Email</label>
+        </dt>
+        <dd>
+          <input type='text' name='email' id='email' placeholder="someone@example.com" pattern='.+@.+' required>
+          <span class='field_error_message'></span>
+        </dd>
+        <dt>
+          <label for='password'>Password</label>
+        </dt>
+        <dd>
+          <input type='password' name='password' id='password' required minlength='10'>
+          <span class='field_error_message'></span>
+        </dd>
+        <dt>
+          <label for='phone'>Phone Number</label>
+        </dt>
+        <dd>
+          <input type='text' name='phone' id='phone' pattern='\d{3}-\d{3}-\d{4}' placeholder="111-222-3333">
+          <span class='field_error_message'></span>
+        </dd>
+        <dt>
+          <label for='creditcard'>Credit Card</label>
+        </dt>
+        <dd>
+          <input type='text' name='creditcard' id='cc1' maxlength="4">
+          <span>-</span>
+          <input type='text' name='creditcard' id='cc2' maxlength="4">
+          <span>-</span>
+          <input type='text' name='creditcard' id='cc3' maxlength="4">
+          <span>-</span>
+          <input type='text' name='creditcard' id='cc4' maxlength="4">
+          <span class='field_error_message'></span>
+        </dd>
+      </dl>
+
+      <button type='submit'>Sign Up</button>
+    </fieldset>
+  </form>
+
+  <div id=serialdiv>
+    <h2>Serialized Form</h2>
+    <p id='serialdata'></p>
+  </div>
+
+  </html>

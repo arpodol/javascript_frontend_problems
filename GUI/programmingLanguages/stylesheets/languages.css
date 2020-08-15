@@ -1,0 +1,26 @@
+body {
+  background-color: #99992F;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+#languages {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 600px;
+  text-align: left;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.more {
+  background-color: #99992F;
+  color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
